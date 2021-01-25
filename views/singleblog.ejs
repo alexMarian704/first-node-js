@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('../layout/header') %>
+<div id="all2">>
+  <div id="singleBlog">
+    <h1 id="singleTitle"><%= blog.title %> </h1>
+    <p id="singleBody"><%= blog.body %> </p>
+    <a data-blog="<%= blog._id %> " class="deleteBut">Delete</a>
+  </div>
+
+    <% comment.forEach((com)=>{ %>
+     <div id="comContainer">
+        <img src="/profle.jpg">
+        <p id="comment"><%= com.body %> </p>
+     </div>
+    <% }) %> 
+    </div>
+    <%- include('../layout/footer') %> 
+
+    <script>
+        const deleteBut = document.querySelector('.deleteBut');
+
+        deleteBut.addEventListener('click',(e)=>{
+            const end = `/blogs/${deleteBut.dataset.blog}`
+
+            fetch(end , {
+                method: 'DELETE'
+            })
+            .then((response)=> response.json())
+            .then((data)=>{
+                //console.log(data)
+                window.location.href = data.redirect       
+            })
+            .catch((err)=>{
+                console.log(err);
+            })
+        })
+    </script>
+</body>
+</html>

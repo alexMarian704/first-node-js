@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('../layout/header') %>
+    <div id="all">
+    <form action="/blogs/create" method="POST">
+        <label id="title" for="title">Title</label>
+        <br>
+        <input type="text" name="title" id="inputTitle" autocomplete="off">
+        <br>
+        <label for="description" id="des">Description</label>
+        <br>
+        <input type="text" name="description"  id="inputDes" autocomplete="off">
+        <br>
+        <label for="body" id="bodyText">Body</label>
+        <br>
+        <!-- <input type="text" name="body"> -->
+        <textarea name="body" id="body" cols="80" rows="20" ></textarea>
+        <br>
+        <button id="submitBut">Submit</button>
+    </form>
+    </div>
+    <%- include('../layout/footer') %> 
+</body>
+</html>

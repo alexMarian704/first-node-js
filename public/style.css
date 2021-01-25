@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 1px 3px 1px rgba(126, 126, 126, 0.25);
+    background-color: #161515;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #121212;
+}
+
+#all{
+    width: 100vw;
+    height: 95vh;
+}
+
+#all2{
+    width: 100vw;
+    height: 120%;
+}
+
+footer{
+    width: 100vw;
+    position: relative;
+    height: 100px;
+    /* margin-bottom: 0; */
+    box-shadow: 0px 1px 5px 1px rgb(172, 172, 172);
+    /* bottom: 0px; */
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#logo{
+    color: black;
+}
+
+#error{
+    width: 800px;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+}
+
+.deleteBut{
+    background-color: rgb(160, 19, 19);
+    width: 80px;
+    height: 37px;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+    text-align: center;
+    /* margin-right: 80px;
+    margin-bottom: 20px; */
+    position: absolute;
+    bottom: 10px;
+    right: 140px;
+}
+.deleteBut:hover{
+    background-color: red;
+}
+
+#aNav{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#aNav:hover{
+    color: rgb(51, 51, 51);
+}
+
+#blogContainer{
+    width: 67vw;
+    height: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 0.5px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 3px 5px rgba(175, 175, 175, 0.07);
+    padding: 10px;
+}
+
+#blogLink{
+    color: black;
+}
+
+#blogLink:hover{
+    color: rgb(42, 42, 42);
+}
+
+#blogContainer:hover{
+    box-shadow: 0px 0px 8px 5px rgba(190, 190, 190, 0.23);
+}
+
+form{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+input{
+    outline: none;
+    color: black;
+    font-weight: 600;
+}
+
+#title{
+    font-size: 21px;
+    float: left;
+    margin-top: 10px;
+}
+#inputTitle{
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 1px 3px 1px rgba(136, 136, 136, 0.3);
+    border-radius: 5px;
+}
+
+#inputDes{
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 1px 3px 1px rgba(149, 149, 149, 0.3);
+    border-radius: 5px;
+}
+
+#des{
+    font-size: 21px;
+    float: left;
+    margin-top: 20px;
+}
+
+#bodyText{
+    float: left;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 3px 1px rgba(148, 148, 148, 0.3);
+    color: black;
+    border-radius: 5px;
+}
+
+#submitBut{
+    float: left;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    background-color: rgb(10, 177, 228);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+    margin-top: 4px;
+}
+
+#submitBut:hover{
+    background-color: rgb(15, 131, 167);
+}
+
+#singleBlog{
+    position: relative;
+}
+
+#singleTitle{
+    width: 500px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#singleBody{
+    padding: 70px;
+    padding-left: 140px;
+    padding-right: 140px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#comContainer{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 580px;
+    height: 86px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 1px 3px 1px rgba(92, 92, 92, 0.35);
+    margin-top: 20px; 
+}
+
+img{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 1px rgba(92, 92, 92, 0.15);
+}
+
+#comment{
+    width: 460px;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 21px;
+}
+
+/* ::-webkit-scrollbar{
+    width: 10px;
+} */
+::-webkit-scrollbar-button{
+    display: none;
+}
+
+#comBut{
+    color: black;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(0, 195, 255);
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+#comBut:hover{
+    background-color: rgb(0, 140, 255);
+}

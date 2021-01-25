@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>alo</title>
+</head>
+<body>
+    <%- include('../layout/header') %> 
+    <div id="all">
+    <% blogs.forEach((blog) => { %>
+        <a href="/blogs/<%= blog._id %> " id="blogLink">
+        <div id="blogContainer"> 
+        <h1><%= blog.title%></h1>
+        <h3><%= blog.description%></h3>
+        <!-- <p><%= blog.body%></p> -->
+        </div>
+        </a>
+    <% }) %> 
+    </div>
+    <%- include('../layout/footer') %> 
+</body>
+</html>
